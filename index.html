@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Captación de Agua Pluvial — Modelo y Soluciones</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/responcive.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Captación de Agua Pluvial</h1>
+      </div>
+      <button class="hamburger" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <nav id="main-nav" aria-label="Navegación principal">
+        <a href="calculadora.html">Calculadora</a>
+        <a href="proyectos.html">Proyectos</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="intro">
+        <div class="kicker">Soluciones prácticas · Cálculo sencillo</div>
+        <h2 id="hero-title">Modelo matemático para captación de agua pluvial</h2>
+        <p class="lead">Porque el agua cae y acumula memoria; aquí traducimos lluvia en números, y números en reserva. Un método claro, profesional y —por qué no— con un guiño juguetón a lo sostenible.</p>
+        <div id="hero-cta" class="cta">
+          <button class="btn" onclick="document.getElementById('modelo').scrollIntoView({behavior:'smooth'})">Modelo y Aplicaciones</button>
+          <button class="btn" onclick="document.getElementById('modelos').scrollIntoView({behavior:'smooth'})">Soluciones y Recomendasiones</button>
+          <button class="btn" onclick="document.getElementById('modeloss').scrollIntoView({behavior:'smooth'})">Coeficientes de escorrentía</button>
+          <button class="btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Contactanos</button>
+        </div>
+      </div>
+
+      <aside class="box aside-hero">
+        <h3>Resumen rápido</h3>
+        <p class="muted">Q = A × P × C  — Volumen anual captado.  V = Q × D — Volumen de almacenamiento necesario.</p>
+        <div style="height:8px"></div>
+        <div class="cards" style="grid-template-columns:1fr;">
+          <div class="card">
+            <h3>Métrica</h3>
+            <p class="muted">Área de captación, precipitación y coeficiente de escorrentía son los pilares del cálculo.</p>
+          </div>
+          <div class="card">
+            <h3>Aplicación</h3>
+            <p class="muted">Diseño doméstico, evaluación de viabilidad y dimensionamiento de tanques.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <main>
+      <section id="modelo" class="model" aria-label="Modelo matemático">
+        <article class="box">
+          <h2>Modelo Matemático para Captación de Agua Pluvial en los Hogares</h2>
+          <p class="tagline">Aquí está el método, sin vueltas: directo, medible y útil.</p>
+
+          <h3 style="margin-top:14px">Variables</h3>
+          <ul class="muted">
+            <li><strong>A:</strong> Área de captación (m²)</li>
+            <li><strong>P:</strong> Precipitación pluvial anual (mm/año)</li>
+            <li><strong>C:</strong> Coeficiente de escorrentía (adimensional)</li>
+            <li><strong>V:</strong> Volumen de almacenamiento (m³)</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Ecuación</h3>
+          <p class="muted">La cantidad de agua pluvial captada se calcula con:</p>
+          <pre class="code">Q = A × P × C  (Q en m³/año)</pre>
+
+          <h3 style="margin-top:12px">Cálculo del Volumen de Almacenamiento</h3>
+          <p class="muted">Para almacenar el agua captada se usa:</p>
+          <pre class="code">V = Q × D  (D = duración del período de sequía en años)</pre>
+
+          <h3 style="margin-top:12px">Ejemplo</h3>
+          <p class="muted">Supongamos: A = 100 m², P = 800 mm/año, C = 0.8, D = 0.25 años (3 meses).</p>
+          <pre class="code">Q = 100 × 800 × 0.8 = 64 m³/año
+       V = 64 × 0.25 = 16 m³</pre>
+
+        </article>
+
+        <aside class="box">
+          <h3>Aplicaciones</h3>
+          <ul class="muted">
+            <li>Diseñar sistemas de captación para hogares y edificios.</li>
+            <li>Determinar la cantidad de agua captable y a almacenar.</li>
+            <li>Evaluar viabilidad en regiones y comparar escenarios.</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Ventajas del Modelo</h3>
+          <ul class="muted">
+            <li>Estimaciones rápidas y accionables.</li>
+            <li>Ayuda en el diseño y dimensionamiento eficiente.</li>
+            <li>Permite probar distintos escenarios con facilidad.</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Notas de diseño</h3>
+          <p class="muted">Este modelo es simple y útil para planificación inicial. Para proyectos críticos se recomienda complementar con datos locales de lluvia mensual, pérdidas por evaporación y filtros de entrada.</p>
+        </aside>
+      </section>
+
+      <section id="modelos" class="box" style="margin-top:18px">
+        <h3>Tarjetas de soluciones y recomendaciones</h3>
+        <div class="cards">
+          <div class="card">
+            <h3>Filtrado inicial</h3>
+            <p class="muted">Instalar rejillas y primer filtro para remover hojas y sedimentos antes de la cisterna.</p>
+          </div>
+
+          <div class="card">
+            <h3>Dimensionamiento</h3>
+            <p class="muted">Utiliza Q y D para calcular V. Redondea a la capacidad comercial más cercana y considera pérdidas.</p>
+          </div>
+
+          <div class="card">
+            <h3>Mantenimiento</h3>
+            <p class="muted">Revisar y limpiar filtros cada 3 meses; controlar la calidad del agua si se usa para consumo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="modeloss" class="box" style="margin-top:18px">
+        <h3>Coeficientes de escorrentía por materiales de techo </h3>
+        <div class="cards">
+          <div class="card">
+            <h3>valores recomendados</h3>
+            <p class="muted">Tabla resumida (rangos habituales usados en literatura técnica y normativa):
+                Techo metálico (chapa/galvanizada): 0.90 – 0.98. 
+                Teja cerámica / teja de barro: 0.70 – 0.90. 
+                Concreto (losas): 0.60 – 0.90. 
+                Asfalto / tejas asfálticas: 0.85 – 0.95. 
+                Cubiertas con grava / terrazo: 0.70 – 0.85. 
+                Techo verde / vegetado: 0.20 – 0.75.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Recomendaciones:</h3>
+            <p class="muted">Ofrece opciones en la calculadora: “material predefinido” (con rango sugerido) y selector avanzado para ajuste manual.</p>
+          </div>
+
+          <div class="card">
+            <p class="muted"><img src="imagenes/hero-bg.jpg" alt="agua" class="responsive-img"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="box contact" aria-labelledby="contacto-title">
+        <h2 id="contacto-title">Contacto — Consulta tu proyecto</h2>
+        <p class="lead">Rellena el formulario y te responderemos. No mandes mensajes al vacío: validamos y cuidamos cada palabra.</p>
+
+        <form id="contactForm" novalidate aria-describedby="form-status">
+          <div class="form-group">
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nombre" name="nombre" required maxlength="100" aria-required="true">
+            <div class="error" id="error-nombre" aria-live="polite"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required aria-required="true" placeholder="tunombre@ejemplo.com">
+            <div class="error" id="error-email" aria-live="polite"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+            <input type="tel" id="telefono" name="telefono" required aria-required="true" placeholder="+52 55 1234 5678">
+            <div class="error" id="error-telefono" aria-live="polite"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" required rows="5" maxlength="1000" aria-required="true"></textarea>
+            <div class="error" id="error-mensaje" aria-live="polite"></div>
+          </div>
+
+          <div class="form-group checkbox">
+            <label>
+              <input type="checkbox" id="acepto" name="acepto" required aria-required="true"> Acepto que mis datos sean usados para responder a mi consulta.
+            </label>
+            <div class="error" id="error-acepto" aria-live="polite"></div>
+          </div>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+          <div class="actions">
+            <button type="submit" id="submitBtn" class="btn">Enviar consulta</button>
+            <button type="reset" class="btn secondary">Limpiar</button>
+          </div>
+        </form>
+      </section>
+      <section>
+      
+  <h3>Mapa de Google Maps — Regiones de Zinacantepec</h3>
+  <div id="map"></div>
+
+  <script src="js/mapa.js"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjATw6o7iimGj7wNxz59P53-s3szeIZjQ&callback=initMap">
+  </script>
+      </section>
+    </main>
+   
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('main-nav');
+
+      btn.style.touchAction = 'manipulation';
+      nav.style.touchAction = 'manipulation';
+
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        const isOpen = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.addEventListener('click', function(e){
+        if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', function(){
+          if (nav.classList.contains('open')) {
+            nav.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      window.addEventListener('resize', function(){
+        if (window.innerWidth > 900 && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
+
+  <script src="js/formulario.js"></script>
+  <footer>
+      <p>&copy; 2025 Mi Proyecto · Diseñado para transformar lluvia en recurso.</p>
+    </footer>
+</body>
+</html>
+
+
+
